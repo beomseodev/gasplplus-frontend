@@ -1,0 +1,103 @@
+.page {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 120px 24px 64px;
+  background:
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 280px),
+    #ffffff;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px;
+  border: 1px solid #d9e1ea;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #355c7d;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+  color: #102033;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #425466;
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+}
+
+.content section {
+  padding: 28px;
+  border: 1px solid #e5eaf0;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #102033;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #425466;
+}
+
+.mapBox {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #d9e1ea;
+}
+
+.mapFrame {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 104px;
+  }
+
+  .hero {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .content section {
+    padding: 24px;
+  }
+}
