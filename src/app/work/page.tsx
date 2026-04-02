@@ -1,61 +1,176 @@
-import styles from "../detail-page.module.css";
+import sharedStyles from "../detail-page.module.css";
+import styles from "./page.module.css";
+
+const coreBusiness = [
+  {
+    key: "platform",
+    badge: "Platform",
+    title: "임베디드 플랫폼 / BT 5.0",
+    summary:
+      "프로세서와 MCU 기반 하드웨어 설계부터 정밀 센서와 통신 모듈 개발까지 수행합니다.",
+    items: [
+      "NXP, TI, STM, AVR 기반 설계 및 최적화",
+      "정밀 센서 모듈 설계 및 개발",
+      "Bluetooth / Wi-Fi 통신용 H/W, S/W 개발",
+      "시뮬레이터 입출력 시스템 및 패널 개발",
+    ],
+  },
+  {
+    key: "software",
+    badge: "Software",
+    title: "임베디드 S/W & Mobile",
+    summary:
+      "OS 포팅, 펌웨어, 모바일과 PC 애플리케이션까지 연결해 제어 경험을 완성합니다.",
+    items: [
+      "Non-OS, WinCE, Embedded Linux 포팅",
+      "Firmware 개발",
+      "PC / Mobile 기반 앱 개발",
+      "제어 및 관제 소프트웨어 구현",
+    ],
+  },
+  {
+    key: "si",
+    badge: "Integration",
+    title: "System Integration (SI)",
+    summary:
+      "장비와 소프트웨어를 함께 묶어 실제 현장에서 사용할 수 있는 통합 시스템을 만듭니다.",
+    items: [
+      "점검장비용 PC 애플리케이션 개발",
+      "시스템 SI 개발 및 통합 솔루션 구현",
+      "웹 기반 프로그램 솔루션 제공",
+    ],
+  },
+  {
+    key: "automotive",
+    badge: "Automotive",
+    title: "Automotive / 자율주행센서",
+    summary:
+      "자동차 센서 분야에서 신호 측정과 모듈 설계 역량을 바탕으로 제품을 개발합니다.",
+    items: [
+      "HR WSS 기반 센서 시스템 개발",
+      "Intelligence bearing wave sensor module 개발",
+    ],
+  },
+];
+
+const businessFields = [
+  "입출력 시스템 보드 개발",
+  "원격의료 하드웨어 개발",
+  "Bluetooth 4.0 / 5.0 / Wi-Fi 응용 제품 개발",
+  "의료기기, 복강경, 스마트 체온계 개발",
+  "HR WSS / wheel wave sensor 센서류 개발",
+  "PCB 및 조립 단품 검사 장비 설계 제작",
+  "훈련장비 전장 설계 제작 및 설치",
+  "UH60FFS / LYNX FMS 정비",
+];
+
+const products = [
+  "DI, AI, 디스플레이 입출력 보드",
+  "아날로그 제어 계기패널 제어보드",
+  "온도 / 압력 / 진동 / IR / 수질 / 가스 / 홀 센서보드",
+  "산업용 PCB 검사 시스템",
+  "산업용 단품 검사 시스템",
+];
 
 export default function WorkPage() {
   return (
-    <div className={styles.page}>
+    <div className={sharedStyles.page}>
       <main className={styles.main}>
         <section className={styles.hero}>
-          <p className={styles.eyebrow}>Work</p>
-          <h1>하는 일</h1>
-          <p>
-            전장설계제작, 시스템개발, 회로설계/아트웍, 보드개발양산, 점검장비, 시뮬레이터, VR/AR장비개발
-          </p>
+          <div className={styles.heroHeader}>
+            <p className={styles.eyebrow}>Work</p>
+            <h1>주요 사업 영역</h1>
+          </div>
+
+          <div className={styles.heroBody}>
+            <div className={styles.heroCopy}>
+              <p className={styles.heroLead}>
+                GASPLPLUS는 임베디드 시스템을 기반으로 하드웨어, 소프트웨어,
+                시스템을 개발하고 생산 및 납품까지 이어지는 Total Service를
+                제공합니다.
+              </p>
+              <div className={styles.heroHighlights} aria-label="핵심 흐름">
+                <span>Hardware</span>
+                <span>Software</span>
+                <span>System Integration</span>
+                <span>Production</span>
+              </div>
+            </div>
+
+            <div className={styles.heroVisual} aria-hidden="true">
+              <div className={`${styles.visualNode} ${styles.visualTopLeft}`}>
+                <strong>임베디드</strong>
+                <span>Platform / BT</span>
+              </div>
+              <div className={`${styles.visualNode} ${styles.visualTopRight}`}>
+                <strong>임베디드</strong>
+                <span>S/W & Mobile</span>
+              </div>
+              <div className={`${styles.visualNode} ${styles.visualBottomLeft}`}>
+                <strong>System</strong>
+                <span>Integration</span>
+              </div>
+              <div className={`${styles.visualNode} ${styles.visualBottomRight}`}>
+                <strong>Automotive</strong>
+                <span>Sensor</span>
+              </div>
+              <div className={styles.visualCenter}>
+                <div className={styles.visualRing}>
+                  <span>핵심사업</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <div className={styles.content}>
-          <section>
-            <h2>전장설계제작</h2>
-            <p>
-              전장설계제작 설명
-            </p>
-          </section>
-          <section>
-            <h2>시스템개발</h2>
-            <p>
-              시스템개발 설명
-            </p>
-          </section>
-          <section>
-            <h2>회로설계/아트웍</h2>
-            <p>
-              회로설계/아트웍 설명
-            </p>
-          </section>
-          <section>
-            <h2>보드개발양산</h2>
-            <p>
-              보드개발양산 설명
-            </p>
-          </section>
-          <section>
-            <h2>점검장비</h2>
-            <p>
-              점검장비 설명
-            </p>
-          </section>
-          <section>
-            <h2>시뮬레이터</h2>
-            <p>
-              시뮬레이터 설명
-            </p>
-          </section>
-          <section>
-            <h2>VR/AR장비개발</h2>
-            <p>
-              VR/AR장비개발 설명
-            </p>
-          </section>
-        </div>
+        <section className={styles.core} aria-labelledby="core-business-title">
+          
+
+          <div className={styles.coreGrid}>
+            {coreBusiness.map((area) => (
+              <article className={styles.coreCard} key={area.title}>
+                <div className={styles.coreCardHeader}>
+                  <span className={`${styles.coreBadge} ${styles[`${area.key}Badge`]}`}>
+                    {area.badge}
+                  </span>
+                  <h3>{area.title}</h3>
+                </div>
+                <p className={styles.coreSummary}>{area.summary}</p>
+                <ul className={styles.coreList}>
+                  {area.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.catalog} aria-labelledby="business-fields-title">
+          <article className={styles.board}>
+            <div className={styles.sectionHeader}>
+              <p className={styles.sectionEyebrow}>Business Fields</p>
+              <h2 id="business-fields-title">사업 분야</h2>
+            </div>
+            <ul className={styles.boardList}>
+              {businessFields.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className={styles.board}>
+            <div className={styles.sectionHeader}>
+              <p className={styles.sectionEyebrow}>Products</p>
+              <h2>개발 보유 제품</h2>
+            </div>
+            <ul className={styles.boardList}>
+              {products.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+        </section>
       </main>
     </div>
   );
