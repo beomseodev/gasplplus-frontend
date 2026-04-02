@@ -1,0 +1,201 @@
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero {
+  overflow: hidden;
+  border: 1px solid #d7dfeb;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.heroHeader {
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #c97707 0%, #df920f 100%);
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.heroHeader h1 {
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.heroBody {
+  display: grid;
+  gap: 22px;
+  padding: 32px;
+  background: linear-gradient(180deg, #fff8ef 0%, #ffffff 100%);
+}
+
+.heroLead {
+  max-width: 48ch;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.heroChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heroChips span {
+  padding: 10px 14px;
+  border: 1px solid #efcf9e;
+  border-radius: 999px;
+  background: #fff7ea;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a55d00;
+}
+
+.info,
+.mapSection {
+  display: grid;
+  gap: 20px;
+}
+
+.sectionHeader {
+  display: grid;
+  gap: 10px;
+}
+
+.sectionEyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c97707;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  color: #102033;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.infoCard,
+.mapCard {
+  border: 1px solid #e0e6ef;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+}
+
+.infoCard {
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+}
+
+.cardEyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c97707;
+}
+
+.infoCard h3,
+.mapCopy h3 {
+  font-size: 28px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #102033;
+}
+
+.infoCard p,
+.mapCopy p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #425466;
+}
+
+.mapCard {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
+}
+
+.mapCopy {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  padding: 32px;
+  background: linear-gradient(180deg, #fffaf3 0%, #ffffff 100%);
+}
+
+.mapBox {
+  min-height: 420px;
+  border-left: 1px solid #e0e6ef;
+}
+
+.mapFrame {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    gap: 32px;
+  }
+
+  .heroHeader,
+  .heroBody,
+  .infoCard,
+  .mapCopy {
+    padding: 24px;
+  }
+
+  .heroLead,
+  .infoCard p,
+  .mapCopy p {
+    font-size: 16px;
+  }
+
+  .infoGrid,
+  .mapCard {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCard,
+  .mapCard {
+    border-radius: 20px;
+  }
+
+  .mapBox {
+    border-left: 0;
+    border-top: 1px solid #e0e6ef;
+    min-height: 360px;
+  }
+
+  .mapFrame {
+    min-height: 360px;
+  }
+}

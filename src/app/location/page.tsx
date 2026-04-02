@@ -1,28 +1,62 @@
-import styles from "../detail-page.module.css";
+import sharedStyles from "../detail-page.module.css";
+import styles from "./page.module.css";
 
 export default function LocationPage() {
   return (
-    <div className={styles.page}>
+    <div className={sharedStyles.page}>
       <main className={styles.main}>
         <section className={styles.hero}>
-          <p className={styles.eyebrow}>Location</p>
-          <h1>오시는 길</h1>
-          <p>
-            방문 전 필요한 위치 정보와 연락 방법을 정리하는 페이지입니다.
-          </p>
+          <div className={styles.heroHeader}>
+            <p className={styles.eyebrow}>Location</p>
+            <h1>오시는 길</h1>
+          </div>
+          <div className={styles.heroBody}>
+            <p className={styles.heroLead}>
+              방문 전 필요한 위치 정보와 방문 안내를 한 번에 확인할 수 있도록
+              정리했습니다. 지도와 주소를 함께 보고 이동 경로를 확인할 수
+              있습니다.
+            </p>
+            <div className={styles.heroChips} aria-label="방문 정보">
+              <span>대전광역시 유성구</span>
+              <span>배울1로 277, 4동</span>
+            </div>
+          </div>
         </section>
 
-        <div className={styles.content}>
-          <section>
-            <h2>주소</h2>
-            <p>대전광역시 유성구 배울1로 277, 4동</p>
-          </section>
-          <section>
-            <h2>방문 안내</h2>
-            <p>방문 전 일정이 있다면 미리 연락해주시면 안내가 수월합니다.</p>
-          </section>
-          <section>
-            <h2>지도</h2>
+        <section className={styles.info} aria-labelledby="visit-info-title">
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Visit Info</p>
+            <h2 id="visit-info-title">방문 정보</h2>
+          </div>
+
+          <div className={styles.infoGrid}>
+            <article className={styles.infoCard}>
+              <p className={styles.cardEyebrow}>Address</p>
+              <h3>주소</h3>
+              <p>대전광역시 유성구 배울1로 277, 4동</p>
+            </article>
+
+            <article className={styles.infoCard}>
+              <p className={styles.cardEyebrow}>Guide</p>
+              <h3>방문 안내</h3>
+              <p>방문 전 일정이 있다면 미리 연락해주시면 안내가 수월합니다.</p>
+            </article>
+          </div>
+        </section>
+
+        <section className={styles.mapSection} aria-labelledby="map-title">
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Map</p>
+            <h2 id="map-title">지도</h2>
+          </div>
+
+          <div className={styles.mapCard}>
+            <div className={styles.mapCopy}>
+              <h3>GASPLPLUS Location</h3>
+              <p>
+                대전광역시 유성구 배울1로 277, 4동
+              </p>
+            </div>
             <div className={styles.mapBox}>
               <iframe
                 className={styles.mapFrame}
@@ -32,8 +66,8 @@ export default function LocationPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
     </div>
   );
