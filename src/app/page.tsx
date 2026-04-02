@@ -7,7 +7,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>Embedded Engineering Company</p>
+            <p className={styles.eyebrow}>Goods for Society, Person, and all Life in nature </p>
             <h1>설계부터 생산까지 이어지는 임베디드 엔지니어링</h1>
             <p className={styles.lead}>
               GASPLPLUS는 임베디드 하드웨어와 소프트웨어를 함께 다루는
