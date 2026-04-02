@@ -7,10 +7,9 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.hero}>
           <p className={styles.eyebrow}>Company Website</p>
-          <h1>복잡한 문제를 단순한 제품으로 풀어내는 팀</h1>
+          <h1>Gaspl Plus</h1>
           <p className={styles.lead}>
-            gasplplus는 기술을 실제 서비스 가치로 연결하는 데 집중합니다.
-            지금은 회사 소개 사이트의 기본 뼈대를 먼저 구성한 상태입니다.
+            복잡한 문제를 단순한 제품으로 풀어내는 팀
           </p>
         </section>
 

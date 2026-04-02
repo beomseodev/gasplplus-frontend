@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import gasplplusLogo from "../gasplplus_logo.png";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,8 +30,13 @@ export default function RootLayout({
       <body>
         <header className="siteHeader">
           <div className="siteHeaderInner">
-            <Link className="siteBrand" href="/">
-              GASPLPLUS
+            <Link className="siteBrand" href="/" aria-label="GASPLPLUS 홈">
+              <Image
+                className="siteBrandImage"
+                src={gasplplusLogo}
+                alt="GASPLPLUS"
+                priority
+              />
             </Link>
             <nav className="siteNav" aria-label="주요 메뉴">
               <Link href="/about">회사 소개</Link>

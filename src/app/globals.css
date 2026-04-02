@@ -56,10 +56,8 @@ a {
 }
 
 .siteBrand {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: #f97316;
+  display: flex;
+  align-items: center;
 }
 
 .siteNav {
@@ -73,11 +71,21 @@ a {
   font-size: 15px;
 }
 
+.siteBrandImage {
+  width: auto;
+  height: 34px;
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
+  .siteBrandImage {
+    height: 30px;
+  }
+
   .siteHeaderInner {
     flex-direction: column;
     align-items: flex-start;
