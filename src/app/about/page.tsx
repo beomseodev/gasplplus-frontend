@@ -1,6 +1,80 @@
 import sharedStyles from "../detail-page.module.css";
 import styles from "./page.module.css";
 
+const history = [
+  {
+    year: "2025",
+    items: [{ month: "04", text: "안마기업체 신제품PCB및 제품검사지그" }],
+  },
+  {
+    year: "2024",
+    items: [
+      { month: "09", text: "안마기업체 PCB및 제품 검사지그" },
+      { month: "02", text: "드론용파워/통신/센싱보드개발" },
+    ],
+  },
+  {
+    year: "2023",
+    items: [
+      { month: "12", text: "낙하산시뮬레이터전장제작설치" },
+      { month: "04", text: "경찰VR시뮬레이터하드웨어" },
+    ],
+  },
+  {
+    year: "2022",
+    items: [{ month: "11", text: "오토바이무선충전거치대개발양산" }],
+  },
+  {
+    year: "2021",
+    items: [{ month: "12", text: "마그네틱활용 복강경마킹장비개발" }],
+  },
+  {
+    year: "2020",
+    items: [{ month: "12", text: "드론 파워보드, 파워분배보드" }],
+  },
+  {
+    year: "2019",
+    items: [
+      { month: "12", text: "AI32채널 측정 및 디스플레이보드" },
+      { month: "11", text: "LYNX해군 패널류 성능개선" },
+      { month: "07", text: "반도체공정 웨이퍼온도측정" },
+    ],
+  },
+  {
+    year: "2018",
+    items: [
+      { month: "10", text: "태양광무선수로개폐장치" },
+      { month: "07", text: "잠수함시뮬레이터패널류7종개발" },
+      { month: "03", text: "자동차 휠 속도센서 WSS개발" },
+      { month: "03", text: "가로등150W LED드라이브&가시광통신" },
+    ],
+  },
+  {
+    year: "2017",
+    items: [
+      { month: "12", text: "LYXY CFT 성능개선사업 참여" },
+      { month: "03", text: "미래테크원 zigbee node 보드" },
+      { month: "03", text: "미래테크원 8W LED 등 개발" },
+      { month: "01", text: "신발건조기개발" },
+    ],
+  },
+  {
+    year: "2016",
+    items: [
+      { month: "12", text: "다목적실용위성 6호 Baseband TIU보드" },
+      { month: "06", text: "보카보카 커피로스터기계전장개발" },
+      { month: "01", text: "GRA시뮬레이터" },
+    ],
+  },
+  {
+    year: "2015",
+    items: [
+      { month: "12", text: "가스펠플러스 설립" },
+      { month: "12", text: "GRA시뮬레이터" },
+    ],
+  },
+];
+
 export default function AboutPage() {
   return (
     <div className={sharedStyles.page}>
@@ -60,6 +134,40 @@ export default function AboutPage() {
               </p>
             </div>
           </article>
+        </section>
+
+        <section className={styles.history} aria-labelledby="history-title">
+          <div className={styles.historyHeader}>
+            <p className={styles.historyEyebrow}>History</p>
+            <h2 id="history-title">기업 연혁</h2>
+            <p>
+              2015년 설립 이후 진행해 온 주요 개발 이력입니다. 이미지가 아닌
+              텍스트 타임라인으로 정리해 이후 수정과 확장이 쉽도록 구성했습니다.
+            </p>
+          </div>
+
+          <div className={styles.timeline}>
+            {history.map((group) => (
+              <article className={styles.timelineGroup} key={group.year}>
+                <div className={styles.timelineMarker} aria-hidden="true">
+                  <span className={styles.timelineDot} />
+                </div>
+                <div className={styles.timelineCard}>
+                  <p className={styles.timelineYear}>{group.year}</p>
+                  <ul className={styles.timelineList}>
+                    {group.items.map((item) => (
+                      <li key={`${group.year}-${item.month}-${item.text}`}>
+                        <span className={styles.timelineDate}>
+                          {group.year}. {item.month}.
+                        </span>
+                        <span>{item.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
       </main>
     </div>
