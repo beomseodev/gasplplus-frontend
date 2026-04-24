@@ -87,7 +87,7 @@ export default function WorkPage() {
           <div className={styles.heroBody}>
             <div className={styles.heroCopy}>
               <p className={styles.heroLead}>
-                GASPLPLUS는 임베디드 시스템을 기반으로 하드웨어, 소프트웨어,
+                GSPLPLUS는 임베디드 시스템을 기반으로 하드웨어, 소프트웨어,
                 시스템을 개발하고 생산 및 납품까지 이어지는 원스톱 서비스를
                 제공합니다.
               </p>

@@ -84,11 +84,11 @@ export default function AboutPage() {
         <section className={styles.story}>
           <div className={styles.storyHeader}>
             <p className={styles.eyebrow}>회사 소개</p>
-            <h1>GASPLPLUS는 어떤 회사인가요?</h1>
+            <h1>GSPLPLUS는 어떤 회사인가요?</h1>
           </div>
           <div className={styles.storyBody}>
             <p className={styles.storyLead}>
-              GASPLPLUS는 임베디드 하드웨어와 소프트웨어를 함께 다루는
+              GSPLPLUS는 임베디드 하드웨어와 소프트웨어를 함께 다루는
               엔지니어링 기업입니다. <br /> 2015년 창업 이후 축적한 경험과 기술을
               바탕으로 다양한 산업의 요구사항과 기술 문제를 해결하며, 고객의
               가치를 키우는 기획과 협력, 개발과 구현, 성장 동반의 흐름을 만들어

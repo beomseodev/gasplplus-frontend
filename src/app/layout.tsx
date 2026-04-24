@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
-import gasplplusLogo from "../gasplplus_logo.png";
+import gsplplusLogo from "../gsplplus_logo.png";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 // 2026-04-21 콘텐츠 한국어 톤 통일: 검색·미리보기용 사이트 설명을 한국어로 정리함.
 export const metadata: Metadata = {
-  title: "GASPLPLUS",
+  title: "GSPLPLUS",
   description:
-    "임베디드 하드웨어·소프트웨어 엔지니어링 기업 GASPLPLUS 공식 웹사이트입니다.",
+    "임베디드 하드웨어·소프트웨어 엔지니어링 기업 GSPLPLUS 공식 웹사이트입니다.",
 };
 
 export default function RootLayout({
@@ -32,11 +32,11 @@ export default function RootLayout({
       <body>
         <header className="siteHeader">
           <div className="siteHeaderInner">
-            <Link className="siteBrand" href="/" aria-label="GASPLPLUS 홈">
+            <Link className="siteBrand" href="/" aria-label="GSPLPLUS 홈">
               <Image
                 className="siteBrandImage"
-                src={gasplplusLogo}
-                alt="GASPLPLUS"
+                src={gsplplusLogo}
+                alt="GSPLPLUS"
                 priority
               />
             </Link>
