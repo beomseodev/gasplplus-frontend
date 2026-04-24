@@ -15,9 +15,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// 2026-04-21 콘텐츠 한국어 톤 통일: 검색·미리보기용 사이트 설명을 한국어로 정리함.
 export const metadata: Metadata = {
   title: "GASPLPLUS",
-  description: "GASPLPLUS company website",
+  description:
+    "임베디드 하드웨어·소프트웨어 엔지니어링 기업 GASPLPLUS 공식 웹사이트입니다.",
 };
 
 export default function RootLayout({
