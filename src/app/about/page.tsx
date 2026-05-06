@@ -6,29 +6,29 @@ import styles from "./page.module.css";
 const history = [
   {
     year: "2025",
-    items: [{ month: "04", text: "안마기업체 신제품PCB및 제품검사지그" }],
+    items: [{ month: "04", text: "안마기 업체 신제품 PCB 및 제품 검사 지그" }],
   },
   {
     year: "2024",
     items: [
-      { month: "09", text: "안마기업체 PCB및 제품 검사지그" },
-      { month: "02", text: "드론용파워/통신/센싱보드개발" },
+      { month: "09", text: "안마기 업체 PCB 및 제품 검사 지그" },
+      { month: "02", text: "드론용 파워/통신/센싱 보드 개발" },
     ],
   },
   {
     year: "2023",
     items: [
-      { month: "12", text: "낙하산시뮬레이터전장제작설치" },
-      { month: "04", text: "경찰VR시뮬레이터하드웨어" },
+      { month: "12", text: "낙하산 시뮬레이터 전장 제작 및 설치" },
+      { month: "04", text: "경찰 VR 시뮬레이터 하드웨어" },
     ],
   },
   {
     year: "2022",
-    items: [{ month: "11", text: "오토바이무선충전거치대개발양산" }],
+    items: [{ month: "11", text: "오토바이 무선충전 거치대 개발 및 양산" }],
   },
   {
     year: "2021",
-    items: [{ month: "12", text: "마그네틱활용 복강경마킹장비개발" }],
+    items: [{ month: "12", text: "마그네틱 활용 복강경 마킹 장비 개발" }],
   },
   {
     year: "2020",
@@ -37,42 +37,42 @@ const history = [
   {
     year: "2019",
     items: [
-      { month: "12", text: "AI32채널 측정 및 디스플레이보드" },
-      { month: "11", text: "LYNX해군 패널류 성능개선" },
-      { month: "07", text: "반도체공정 웨이퍼온도측정" },
+      { month: "12", text: "AI 32채널 측정 및 디스플레이 보드" },
+      { month: "11", text: "LYNX 해군 패널류 성능 개선" },
+      { month: "07", text: "반도체 공정 웨이퍼 온도 측정" },
     ],
   },
   {
     year: "2018",
     items: [
-      { month: "10", text: "태양광무선수로개폐장치" },
-      { month: "07", text: "잠수함시뮬레이터패널류7종개발" },
+      { month: "10", text: "태양광 무선 수로 개폐 장치" },
+      { month: "07", text: "잠수함 시뮬레이터 패널류 7종 개발" },
       { month: "03", text: "자동차 휠 속도센서 WSS개발" },
-      { month: "03", text: "가로등150W LED드라이브&가시광통신" },
+      { month: "03", text: "가로등 150W LED 드라이브 및 가시광 통신" },
     ],
   },
   {
     year: "2017",
     items: [
-      { month: "12", text: "LYXY CFT 성능개선사업 참여" },
-      { month: "03", text: "미래테크원 zigbee node 보드" },
+      { month: "12", text: "LYNX CFT 성능 개선 사업 참여" },
+      { month: "03", text: "미래테크원 Zigbee node 보드" },
       { month: "03", text: "미래테크원 8W LED 등 개발" },
-      { month: "01", text: "신발건조기개발" },
+      { month: "01", text: "신발 건조기 개발" },
     ],
   },
   {
     year: "2016",
     items: [
-      { month: "12", text: "다목적실용위성 6호 Baseband TIU보드" },
-      { month: "06", text: "보카보카 커피로스터기계전장개발" },
-      { month: "01", text: "GRA시뮬레이터" },
+      { month: "12", text: "다목적실용위성 6호 Baseband TIU 보드" },
+      { month: "06", text: "보카보카 커피 로스터 기계 전장 개발" },
+      { month: "01", text: "GRA 시뮬레이터" },
     ],
   },
   {
     year: "2015",
     items: [
       { month: "12", text: "가스펠플러스 설립" },
-      { month: "12", text: "GRA시뮬레이터" },
+      { month: "12", text: "GRA 시뮬레이터" },
     ],
   },
 ];
@@ -84,14 +84,16 @@ export default function AboutPage() {
         <section className={styles.story}>
           <div className={styles.storyHeader}>
             <p className={styles.eyebrow}>회사 소개</p>
-            <h1>GSPLPLUS는 어떤 회사인가요?</h1>
+            <h1>가스펠플러스(GSPLPLUS)는 어떤 회사인가요?</h1>
           </div>
           <div className={styles.storyBody}>
             <p className={styles.storyLead}>
-              GSPLPLUS는 임베디드 하드웨어와 소프트웨어를 함께 다루는
-              엔지니어링 기업입니다. <br /> 2015년 창업 이후 축적한 경험과 기술을
-              바탕으로 다양한 산업의 요구사항과 기술 문제를 해결하며, 고객의
-              가치를 키우는 기획과 협력, 개발과 구현, 성장 동반의 흐름을 만들어
+              가스펠플러스(GSPLPLUS)는 임베디드 하드웨어와 소프트웨어를 함께
+              다루는 엔지니어링 기업입니다. <br /> gspls.kr 공식 웹사이트를 통해
+              전장설계, 회로설계, 보드개발, 시스템 통합 등 주요 기술 분야를
+              소개하고 있습니다. 2015년 창업 이후 축적한 경험과 기술을 바탕으로
+              다양한 산업의 요구사항과 기술 문제를 해결하며, 고객의 가치를
+              키우는 기획과 협력, 개발과 구현, 성장 동반의 흐름을 만들어
               왔습니다.
             </p>
             <div className={styles.principles} aria-label="기업 이념">
@@ -109,8 +111,8 @@ export default function AboutPage() {
               <h2>기획과 협력</h2>
               <p>
                 고객의 요구사항과 문제점을 분석해 최적의 솔루션을 제안합니다.
-                단순히 개발만 수행하는 조직이 아니라, 함께 방향을 고민하고
-                생각과 기술을 공유하는 협력 파트너를 지향합니다.
+                전장설계, 회로설계, 보드개발 범위를 함께 검토하며 방향을
+                고민하고 기술을 공유하는 협력 파트너를 지향합니다.
               </p>
             </div>
           </article>
@@ -120,8 +122,8 @@ export default function AboutPage() {
               <h2>개발과 구현</h2>
               <p>
                 축적된 노하우를 바탕으로 임베디드 기반의 다양한 솔루션을
-                구현합니다. PC뿐 아니라 Android, iOS 등 여러 환경을 아우르는
-                통합 관리와 제어 경험까지 연결합니다.
+                구현합니다. 펌웨어, PC, Android, iOS 등 여러 환경을 아우르는
+                통합 관리와 제어 경험을 실제 장비 개발까지 연결합니다.
               </p>
             </div>
           </article>
@@ -131,8 +133,8 @@ export default function AboutPage() {
               <h2>성장 동반</h2>
               <p>
                 위탁 연구개발, 자사 제품, 센서 모듈 개발과 생산 및 납품까지
-                이어지는 원스톱 서비스를 제공합니다. 고객의 성장 과정에
-                실질적으로 기여하는 실행형 파트너가 되는 것이 목표입니다.
+                이어지는 원스톱 서비스를 제공합니다. 점검장비와 시뮬레이터 등
+                현장 적용 결과물로 고객의 성장 과정에 기여하는 것이 목표입니다.
               </p>
             </div>
           </article>
